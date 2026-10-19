@@ -73,6 +73,9 @@
   --shadow-card: 0 2px 5px #1c355007;
   --shadow-soft: 0 13px 30px #263b5611;
   --shadow-primary: 0 5px 13px #2672ea26;
+
+  /* Breakpoints */
+  --breakpoint-tablet: 768px;
 }
 
 /* =========================================
