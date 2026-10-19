@@ -23,15 +23,15 @@ function App() {
 
   return (
     <div className="container flex flex-col min-h-screen relative justify-center items-center bg-background max-w-full">
-      <section className="flex flex-col space-y-10 tablet:space-y-8 text-center justify-center items-center h-250 tablet:h-300">
-        <div className="w-100 tablet:w-250 space-y-6 tablet:space-y-8 flex flex-col">
+      <section className="flex flex-col space-y-10 tablet:space-y-8 text-center justify-center items-center h-250 tablet:h-300 w-full">
+        <div className="w-96 tablet:w-250 space-y-6 tablet:space-y-8 flex flex-col">
           <h1 className="font-heading text-5xl tablet:text-7xl font-bold">Manage your savings
             with <span className="text-secondary-foreground">confidence.</span></h1>
           <p className="font-sans tablet:font-heading text-muted-foreground text-md tablet:text-xl">A simpler, clearer way to build your future. Track every deposit, keep an eye on your goals, and know exactly where you stand.</p>
 
           <div className="flex flex-row justify-center space-x-6">
-            <Button className={"bg-primary w-48 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 text-white rounded-md"}>Start Learning today <ArrowRight /> </Button>
-            <Button className={"bg-white text-black w-48 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 border-2 border-border rounded-md"}>See how it works<ArrowRight /> </Button>
+            <Button className={"bg-primary w-38 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 text-white rounded-md"}>Start Learning today</Button>
+            <Button className={"bg-white text-black w-38 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 border-2 border-border rounded-md"}>See how it works</Button>
           </div>
 
           <div className="flex flex-row space-x-2 tablet:space-x-4 w-100 tablet:w-140 items-center px-0.4 justify-center mx-auto ">
@@ -73,7 +73,7 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-white w-full tablet:h-200 space-y-8 border-2 border-border">
+      <section className="flex flex-col justify-center items-center bg-white w-full h-280 tablet:h-200 space-y-8 border-2 border-border">
         <div className="space-y-2 tablet:space-y-5 flex flex-col text-center w-100 tablet:w-120">
           <p className="font-heading text-md text-primary">A clearer view of your money</p>
           <h2 className="font-heading text-3xl tablet:text-5xl font-medium">Your savings, without
@@ -145,9 +145,10 @@ function App() {
         </div>
       </section>
 
+
       <section className="flex flex-col tablet:flex-1 tablet:flex-row h-160 tablet:h-600  tablet:justify-center tablet:space-x-10 py-6 px-6 tablet:py-12 tablet:px-6 space-y-4 w-full">
         {/* Right */}
-        <div className="flex flex-col justify-start space-y-4 tablet:space-y-5 w-160">
+        <div className="flex flex-col justify-start space-y-4 tablet:space-y-5 w-auto md:w-160">
           <p className="text-primary text-md tablet:text-xl font-mono uppercase">It feels good to know</p>
           <h2 className="font-heading text-3xl tablet:text-4xl">Start small. <br />
             See the difference.</h2>
@@ -196,7 +197,8 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col w-full justify-center py-10 items-center bg-white border-t-2 border-border">
+
+      <section className="flex flex-col w-full justify-center py-10 items-center border-t-2 border-border">
         <Card className="w-96 tablet:w-400 h-120 tablet:h-96">
           <CardContent className="flex flex-col tablet:flex-1 tablet:flex-row tablet:justify-between space-y-4 bg">
             <div className="flex flex-col justify-center items-center mx-auto">
