@@ -22,7 +22,7 @@ function App() {
   } satisfies ChartConfig
 
   return (
-    <div className="container flex flex-col min-h-screen relative justify-center items-center bg-background max-w-full">
+    <div className="container flex flex-col min-h-screen relative justify-center items-center max-w-full">
       <section className="flex flex-col space-y-10 tablet:space-y-8 text-center justify-center items-center h-250 tablet:h-300 w-full">
         <div className="w-96 tablet:w-250 space-y-6 tablet:space-y-8 flex flex-col">
           <h1 className="font-heading text-5xl tablet:text-7xl font-bold">Manage your savings
@@ -34,7 +34,7 @@ function App() {
             <Button className={"bg-white text-black w-38 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 border-2 border-border rounded-md"}>See how it works</Button>
           </div>
 
-          <div className="flex flex-row space-x-2 tablet:space-x-4 w-100 tablet:w-140 items-center px-0.4 justify-center mx-auto ">
+          <div className="flex flex-row space-x-2 tablet:space-x-4 w-96 md:w-140 items-center px-0.4 justify-center mx-auto ">
             {/* lEFT */}
             <div className="flex flex-row gap-2 tablet:gap-2 border-r-2 w-60 tablet:w-80 border-border items-center">
               <AvatarGroup>
@@ -66,21 +66,20 @@ function App() {
           </div>
 
           {/* GIF Image */}
-          <div className="flex flex-col justify-center items-center w-100 tablet:w-250 h-110 tablet:h-auto">
+          <div className="flex flex-col justify-center items-center w-96 md:w-250 lg:w-260 h-110 tablet:h-auto">
             <img src={GifImage} alt="gif" className="hidden tablet:block w-100 tablet:w-260 h-96 tablet:h-150" />
             <img src={GifImageResponsice} alt="gif" className="h-120 tablet:hidden lg:hidden" />
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-white w-full h-280 tablet:h-200 space-y-8 border-2 border-border">
-        <div className="space-y-2 tablet:space-y-5 flex flex-col text-center w-100 tablet:w-120">
+      <section className="flex flex-col justify-center items-center bg-white w-full md:max-w-full h-280 md:h-200 lg:w-240 space-y-8 border-2 border-border">
+        <div className="space-y-2 tablet:space-y-5 flex flex-col text-center w-auto md:w-120">
           <p className="font-heading text-md text-primary">A clearer view of your money</p>
           <h2 className="font-heading text-3xl tablet:text-5xl font-medium">Your savings, without
             the question marks.</h2>
           <p>Everything you need to stay on top of your progress, all in one calm and considered place.</p>
         </div>
-
         <div className="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-3 space-x-0 tablet:space-x-6 space-y-4 tablet:space-y-0">
           <Card className="w-96 h-70">
             <CardHeader>
@@ -143,8 +142,8 @@ function App() {
             </CardContent>
           </Card>
         </div>
-      </section>
 
+      </section>
 
       <section className="flex flex-col tablet:flex-1 tablet:flex-row h-160 tablet:h-600  tablet:justify-center tablet:space-x-10 py-6 px-6 tablet:py-12 tablet:px-6 space-y-4 w-full">
         {/* Right */}
@@ -152,7 +151,7 @@ function App() {
           <p className="text-primary text-md tablet:text-xl font-mono uppercase">It feels good to know</p>
           <h2 className="font-heading text-3xl tablet:text-4xl">Start small. <br />
             See the difference.</h2>
-          <p className="text-muted-foreground font-sans tablet:text-xl w-96 tablet:w-140">Getting a handle on your savings should feel easy. We make each step clear, from your first deposit to your next milestone.</p>
+          <p className="text-muted-foreground font-sans tablet:text-xl w-80 md:w-140 lg:w-120">Getting a handle on your savings should feel easy. We make each step clear, from your first deposit to your next milestone.</p>
           <Link to={"/login"} className="flex flex-row items-center gap-2 font-sans text-primary font-semibold">Create your free accounts <ArrowRight size={18} /></Link>
         </div>
         {/* left */}
@@ -197,34 +196,33 @@ function App() {
         </div>
       </section>
 
-
       <section className="flex flex-col w-full justify-center py-10 items-center border-t-2 border-border">
-        <Card className="w-96 tablet:w-400 h-120 tablet:h-96">
-          <CardContent className="flex flex-col tablet:flex-1 tablet:flex-row tablet:justify-between space-y-4 bg">
+        <Card className="w-96 md:w-180 lg:w-400 h-120 md:h-90 lg:h-96">
+          <CardContent className="flex flex-col tmd:flex-1 md:flex-row md:justify-between space-y-6 md:space-y-4 bg gap-x-4">
             <div className="flex flex-col justify-center items-center mx-auto">
-              <div className="bg-primary text-white h-20 w-20 tablet:h-40 tablet:w-40 rounded-2xl flex flex-col items-center  justify-center">
-                <Shield className="size-11 tablet:size-28" />
+              <div className="bg-primary text-white h-20 w-20 md:h-30 md:w-30 lg:h-40 lg:w-40 rounded-2xl flex flex-col items-center  justify-center">
+                <Shield className="size-11 md:size-20 lg:w-16" />
               </div>
             </div>
-            <div className="flex flex-col space-y-4 w-auto tablet:space-y-2 tablet:w-200">
+            <div className="flex flex-col space-y-4 w-auto tablet:space-y-2 md:w-180 lg:w-250">
               <p className="uppercase text-primary font-sans text-sm font-medium">Transparency is part of trust</p>
-              <div className="flex flex-col space-y-6 w-auto tablet:w-170">
-                <h3 className="text-2xl tablet:text-5xl font-heading font-semibold">Your money. Your records. <br /> <span className="text-primary">Always in your hands.</span></h3>
+              <div className="flex flex-col space-y-6 w-auto md:w-140 lg:w-200">
+                <h3 className="text-2xl md:text-4xl lg:text-5xl font-heading font-semibold">Your money. Your records. <br /> <span className="text-primary">Always in your hands.</span></h3>
 
-                <p className="font-sans text-muted-foreground text-sm tablet:text-xl">We believe you should always know what’s happening with your savings. Your account is private, your transaction history is clear, and every statement is yours to keep.</p>
+                <p className="font-sans text-muted-foreground text-sm md:text-xl lg:text-xl">We believe you should always know what’s happening with your savings. Your account is private, your transaction history is clear, and every statement is yours to keep.</p>
 
                 <div className="grid grid-cols-1 tablet:grid-cols-2 space-y-4">
                   <div className="flex flex-row items-center gap-x-2">
                     <Check className="text-green-400" />
-                    <p className="font-sans text-base text-muted-foreground">Personal financial information</p>
+                    <p className="font-sans text-base md:text-md lg:text-xl text-muted-foreground">Personal financial information</p>
                   </div>
                   <div className="flex flex-row items-center gap-x-2">
                     <Check className="text-green-400" />
-                    <p className="font-sans text-base text-muted-foreground">Verified transaction history</p>
+                    <p className="font-sans text-base md:text-md lg:text-xl text-muted-foreground">Verified transaction history</p>
                   </div>
                   <div className="flex flex-row items-center gap-x-2">
                     <Check className="text-green-400" />
-                    <p className="font-sans text-base text-muted-foreground">Downloadable PDF records</p>
+                    <p className="font-sans text-base md:text-md lg:text-xl text-muted-foreground">Downloadable PDF records</p>
                   </div>
                 </div>
               </div>
