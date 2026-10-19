@@ -73,7 +73,7 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-white w-full md:max-w-full h-280 md:h-200 lg:w-240 space-y-8 border-2 border-border">
+      <section className="flex flex-col justify-center items-center bg-white w-full md:max-w-full lg:w-full h-280 md:h-200 space-y-8 border-2 border-border">
         <div className="space-y-2 tablet:space-y-5 flex flex-col text-center w-auto md:w-120">
           <p className="font-heading text-md text-primary">A clearer view of your money</p>
           <h2 className="font-heading text-3xl tablet:text-5xl font-medium">Your savings, without

@@ -4,7 +4,7 @@ import { ArrowRight, Wallet } from "lucide-react"
 
 export default function HeaderOrganismLandingPage() {
     return (
-        <NavigationMenu className={"flex flex-row border-2 border-border h-20 px-10 md:px-6 lg:px-8 items-center max-w-full"}>
+        <NavigationMenu className={"flex flex-row border-2 border-border h-20 px-2 md:px-6 lg:px-8 items-center max-w-full"}>
             <NavigationMenuList className={"flex flex-row justify-between items-center"}>
                 <div className="flex flex-row justify-center space-x-2 items-center">
                     <div className="bg-primary text-white px-2 py-2 rounded-md">
