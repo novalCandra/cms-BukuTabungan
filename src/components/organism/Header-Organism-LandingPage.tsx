@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "@/components/ui/navigation-menu"
 import { ArrowRight, Wallet } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function HeaderOrganismLandingPage() {
     return (
@@ -19,8 +19,8 @@ export default function HeaderOrganismLandingPage() {
                     <NavigationMenuLink className={"text-muted-foreground hover:text-black"}>FaQs</NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className={"hidden md:flex lg:flex flex-row items-center"}>
-                    <Button className={"hidden md:hidden lg:block bg-transparent text-muted-foreground font-heading font-bold hover:text-primary hover:bg-transparent w-22"}>Log in</Button>
-                    <Button className={"bg-primary w-34 h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2"} >Get started <ArrowRight className="size-5" /></Button>
+                    <Link to={"/auth/login"} className={"hidden md:hidden lg:block bg-transparent text-muted-foreground font-heading font-bold hover:text-primary hover:bg-transparent w-22"}>Log in</Link>
+                    <Link to={"/auth/register"} className={"bg-primary w-34 h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 rounded-md text-white"} >Get started <ArrowRight className="size-5" /></Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
         </NavigationMenu>
