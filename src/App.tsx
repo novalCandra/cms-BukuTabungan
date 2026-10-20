@@ -23,65 +23,66 @@ function App() {
 
   return (
     <div className="container flex flex-col min-h-screen relative justify-center items-center max-w-full">
-      <section className="flex flex-col space-y-10 tablet:space-y-8 text-center justify-center items-center h-250 tablet:h-300 w-full">
-        <div className="w-96 tablet:w-250 space-y-6 tablet:space-y-8 flex flex-col">
-          <h1 className="font-heading text-5xl tablet:text-7xl font-bold">Manage your savings
+      <section className="flex flex-col space-y-10 md:space-y-8 lg:space-y-9 text-center justify-center items-center h-250 md:h-300">
+        <div className="w-96 md:w-180 lg:w-250 space-y-6 md:space-y-8 flex flex-col">
+          <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold">Manage your savings
             with <span className="text-secondary-foreground">confidence.</span></h1>
-          <p className="font-sans tablet:font-heading text-muted-foreground text-md tablet:text-xl">A simpler, clearer way to build your future. Track every deposit, keep an eye on your goals, and know exactly where you stand.</p>
+          <p className="font-sans md:font-heading text-muted-foreground text-md md:text-base lg:text-xl">A simpler, clearer way to build your future. Track every deposit, keep an eye on your goals, and know exactly where you stand.</p>
 
           <div className="flex flex-row justify-center space-x-6">
-            <Button className={"bg-primary w-38 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 text-white rounded-md"}>Start Learning today</Button>
-            <Button className={"bg-white text-black w-38 h-14 tablet:w-50 tablet:h-12 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 border-2 border-border rounded-md"}>See how it works</Button>
+            <Button className={"bg-primary w-38 h-14 md:w-50 lg:w-52 md:h-12 lg:h-14 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 text-white rounded-md"}>Start Learning today</Button>
+            <Button className={"bg-white text-black w-38 h-14 md:w-50 lg:w-52 md:h-12 lg:h-14 font-heading text-sm font-bold flex flex-row hover:-translate-y-1 justify-center items-center gap-2 border-2 border-border rounded-md"}>See how it works</Button>
           </div>
 
-          <div className="flex flex-row space-x-2 tablet:space-x-4 w-96 md:w-140 items-center px-0.4 justify-center mx-auto ">
-            {/* lEFT */}
-            <div className="flex flex-row gap-2 tablet:gap-2 border-r-2 w-60 tablet:w-80 border-border items-center">
-              <AvatarGroup>
-                <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                </Avatar>
-                <Avatar>
-                  <AvatarImage src="https://github.com/maxleiter.png" alt="@maxleiter" />
-                </Avatar>
-                <Avatar>
-                  <AvatarImage
-                    src="https://github.com/evilrabbit.png"
-                    alt="@evilrabbit"
-                  />
-                </Avatar>
-              </AvatarGroup>
-              <div className="flex flex-col justify-between">
-                <div className="flex flex-row gap-2">
-                  <span>★★★★★</span>
+          <div className="flex flex-row space-x-2 md:space-x-4 lg:space-y-5 w-96 md:w-140 lg:w-160 items-center px-0.4 justify-center mx-auto">
+            <div className="flex flex-row justify-between gap-x-2 md:gap-x-3 items-center">
+              <div className="flex flex-row items-center gap-x-2 pr-2 border-border border-r-2">
+                <AvatarGroup>
+                  <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
+                  </Avatar>
+                  <Avatar>
+                    <AvatarImage src="https://github.com/maxleiter.png" alt="@maxleiter" />
+                  </Avatar>
+                  <Avatar>
+                    <AvatarImage
+                      src="https://github.com/evilrabbit.png"
+                      alt="@evilrabbit"
+                    />
+                  </Avatar>
+                </AvatarGroup>
+                <div className="flex flex-col justify-between">
+                  <div className="flex flex-row gap-2">
+                    <span>★★★★★</span>
+                  </div>
+                  <p className="text-[12px] md:text-sm lg:text-xl text-start">Trusted to keep every detail clear</p>
                 </div>
-                <p className="text-[12px] tablet:text-sm text-start">Trusted to keep every detail clear</p>
+
               </div>
-            </div>
-            {/* Right */}
-            <div className="flex flex-row gap-x-1 tablet:gap-x-2 items-center">
-              <Lock className="size-5 text-chart-2" />
-              <p className="font-heading tablet:text-sm font-light text-[12px]">Private by design</p>
+              <div className="flex flex-row gap-x-1 md:gap-x-2 lg:gap-x-3 items-center">
+                <Lock className="size-5 md:size-6 lg:size-5 text-chart-2" />
+                <p className="font-heading md:text-sm lg:text-base font-light text-[12px]">Private by design</p>
+              </div>
             </div>
           </div>
 
           {/* GIF Image */}
-          <div className="flex flex-col justify-center items-center w-96 md:w-250 lg:w-260 h-110 tablet:h-auto">
-            <img src={GifImage} alt="gif" className="hidden tablet:block w-100 tablet:w-260 h-96 tablet:h-150" />
-            <img src={GifImageResponsice} alt="gif" className="h-120 tablet:hidden lg:hidden" />
+          <div className="flex flex-col justify-center items-center w-96 md:w-180 lg:w-260 h-110 md:h-auto">
+            <img src={GifImage} alt="gif" className="hidden md:block w-100 md:w-180 lg:w-280 h-96 md:h-150" />
+            <img src={GifImageResponsice} alt="gif" className="h-120 md:hidden lg:hidden" />
           </div>
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center bg-white w-full md:max-w-full lg:w-full h-280 md:h-200 space-y-8 border-2 border-border">
+      <section className="flex flex-col justify-center items-center bg-white w-full md:max-w-full lg:w-full h-320 md:h-240 lg:h-200 space-y-8 border-2 border-border">
         <div className="space-y-2 tablet:space-y-5 flex flex-col text-center w-auto md:w-120">
           <p className="font-heading text-md text-primary">A clearer view of your money</p>
-          <h2 className="font-heading text-3xl tablet:text-5xl font-medium">Your savings, without
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-medium">Your savings, without
             the question marks.</h2>
           <p>Everything you need to stay on top of your progress, all in one calm and considered place.</p>
         </div>
-        <div className="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-3 space-x-0 tablet:space-x-6 space-y-4 tablet:space-y-0">
-          <Card className="w-96 h-70">
+        <div className="grid grid-cols-1 tablet:grid-cols-2 lg:grid-cols-3 space-x-0 md:space-x-6 space-y-8 md:space-y-6 lg:space-y-1 px-2 md:px-4 lg:px-6">
+          <Card className="w-64 md:w-80 md:h-70 lg:w-84">
             <CardHeader>
               <div className="bg-blue-200 text-primary px-2 py-2 rounded-md w-10">
                 <ChartNoAxesCombined />
@@ -101,7 +102,7 @@ function App() {
               </ChartContainer>
             </CardContent>
           </Card>
-          <Card className="w-96 h-70">
+          <Card className="w-64 md:w-80 md:h-70 lg:w-84">
             <CardHeader>
               <div className="bg-blue-200 text-primary px-2 py-2 rounded-md w-10">
                 <ChartNoAxesCombined />
@@ -121,7 +122,7 @@ function App() {
               </ChartContainer>
             </CardContent>
           </Card>
-          <Card className="w-96 h-70">
+          <Card className="w-64 md:w-80 md:h-70 lg:w-84">
             <CardHeader>
               <div className="bg-blue-200 text-primary px-2 py-2 rounded-md w-10">
                 <ChartNoAxesCombined />
@@ -145,17 +146,18 @@ function App() {
 
       </section>
 
-      <section className="flex flex-col tablet:flex-1 tablet:flex-row h-160 tablet:h-600  tablet:justify-center tablet:space-x-10 py-6 px-6 tablet:py-12 tablet:px-6 space-y-4 w-full">
+
+      <section className="flex flex-col md:flex-1 lg:flex-row h-160 md:h-400 lg:w-400  md:justify-center md:space-x-4 lg:space-y-10 py-6 px-6 md:py-14 lg:py-12 w-px-4 lg:px-6 space-y-4 w-full">
         {/* Right */}
-        <div className="flex flex-col justify-start space-y-4 tablet:space-y-5 w-auto md:w-160">
-          <p className="text-primary text-md tablet:text-xl font-mono uppercase">It feels good to know</p>
-          <h2 className="font-heading text-3xl tablet:text-4xl">Start small. <br />
+        <div className="flex flex-col justify-start space-y-2 md:space-y-4 lg:space-y-5 w-auto md:w-160">
+          <p className="text-primary text-md md:text-xl lg:text-2xl font-mono uppercase">It feels good to know</p>
+          <h2 className="font-heading text-3xl md:text-4xl">Start small. <br />
             See the difference.</h2>
-          <p className="text-muted-foreground font-sans tablet:text-xl w-80 md:w-140 lg:w-120">Getting a handle on your savings should feel easy. We make each step clear, from your first deposit to your next milestone.</p>
+          <p className="text-muted-foreground font-sans md:text-xl lg:text-base w-80 md:w-140 lg:w-120">Getting a handle on your savings should feel easy. We make each step clear, from your first deposit to your next milestone.</p>
           <Link to={"/login"} className="flex flex-row items-center gap-2 font-sans text-primary font-semibold">Create your free accounts <ArrowRight size={18} /></Link>
         </div>
         {/* left */}
-        <div className="flex flex-col space-y-4 w-auto tablet:w-200">
+        <div className="flex flex-col space-y-4 w-auto md:w-180">
           <div className="flex flex-row justify-between py-4 px-4 border-t-2 border-border w-full items-center">
             <div className="flex flex-row gap-x-3 items-center">
               <p className="font-heading text-xl text-muted-foreground">01</p>
@@ -198,7 +200,7 @@ function App() {
 
       <section className="flex flex-col w-full justify-center py-10 items-center border-t-2 border-border">
         <Card className="w-96 md:w-180 lg:w-400 h-120 md:h-90 lg:h-96">
-          <CardContent className="flex flex-col tmd:flex-1 md:flex-row md:justify-between space-y-6 md:space-y-4 bg gap-x-4">
+          <CardContent className="flex flex-col tmd:flex-1 md:flex-row md:justify-between space-y-6 md:space-y-4 bg md:gap-x-6 lg:gap-x-4">
             <div className="flex flex-col justify-center items-center mx-auto">
               <div className="bg-primary text-white h-20 w-20 md:h-30 md:w-30 lg:h-40 lg:w-40 rounded-2xl flex flex-col items-center  justify-center">
                 <Shield className="size-11 md:size-20 lg:w-16" />
