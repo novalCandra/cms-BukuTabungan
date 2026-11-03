@@ -10,7 +10,7 @@ const layoutUsersPage = () => {
     return (
         <SidebarProvider>
             <SidebarUsers />
-            <main>
+            <main className='w-full'>
                 <NavigationMenu className={"flex flex-row md:hidden lg:hidden border-2 border-border bg-white h-20 px-4 md:px-6 lg:px-8 items-center max-w-full"}>
                     <NavigationMenuList className={"flex flex-row justify-between items-center"}>
                         <div className="flex flex-row justify-center space-x-2 items-center">
