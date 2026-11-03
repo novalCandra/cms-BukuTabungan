@@ -24,7 +24,7 @@ const layoutUsersPage = () => {
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
-                <NavigationMenu className={"flex flex-row justify-between items-center py-4 px-4 bg-white max-w-full md:w-[174vh] h-22 border-b-2 border-border"}>
+                <NavigationMenu className={"flex flex-row justify-between items-center py-4 px-4 bg-white max-w-full md:w-[176vh] h-22 border-b-2 border-border"}>
                     <div className="flex flex-row gap-x-1 text-[12px]">
                         <span className="font-sans text-muted-foreground">Workspace</span> / <span className="font-sans font-black">Overview</span>
                     </div>
