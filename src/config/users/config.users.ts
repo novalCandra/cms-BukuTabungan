@@ -1,4 +1,4 @@
-import { ChartNoAxesCombined, FileText, LayoutTemplate, WalletMinimal, type LucideIcon } from "lucide-react";
+import { BookMarkedIcon, LayoutTemplate, User2Icon, WalletMinimal, type LucideIcon } from "lucide-react";
 
 type TypesConfigSidebar = {
     id?: number;
@@ -26,15 +26,15 @@ export const ConfigSidebar: TypesConfigSidebar[] = [
     {
         id: 3,
         link: "/transaction",
-        label: "Transaction",
-        icon: ChartNoAxesCombined,
+        label: "NOTED",
+        icon: BookMarkedIcon,
         isActive: false
     },
     {
         id: 4,
-        link: "/statements",
-        label: "Statemenets",
-        icon: FileText,
+        link: "/profile",
+        label: "PROFILE",
+        icon: User2Icon,
         isActive: false
     }
 ]
