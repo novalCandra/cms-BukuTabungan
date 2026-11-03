@@ -3,9 +3,11 @@ import { SchemaZodAuthLogin } from "@/utils/schema/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 export default function UseHooksAuth() {
     const [showPassword, setShowPassword] = useState<boolean>(true);
+    const navigate = useNavigate();
     const {
         handleSubmit,
         control,
@@ -17,14 +19,16 @@ export default function UseHooksAuth() {
             password: "",
         },
     });
-    const onSubmitLogin = async (e : SchemaApiLogin ) => {
+    const onSubmitLogin = async (e: SchemaApiLogin) => {
         try {
             const data = await ApiServiceLoginAuth(e)
             localStorage.setItem("token", data.data?.acctessToken)
+            localStorage.setItem("name", data.data.data.name)
+            navigate("/dashboard")
         } catch (error) {
             return console.log(error)
         }
     };
 
-    return {showPassword,setShowPassword, handleSubmit, control, errors, onSubmitLogin}
+    return { showPassword, setShowPassword, handleSubmit, control, errors, onSubmitLogin }
 }
