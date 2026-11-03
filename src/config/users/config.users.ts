@@ -18,7 +18,7 @@ export const ConfigSidebar: TypesConfigSidebar[] = [
     },
     {
         id: 2,
-        link: "/savings",
+        link: "/dashboard/savings",
         label: "My savings",
         icon: WalletMinimal,
         isActive: false
