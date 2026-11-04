@@ -5,6 +5,7 @@ import layoutUsersPage from "@/layouts/layoutUsersPage";
 import LoginPage from "@/pages/auth/login";
 import RegisterPage from "@/pages/auth/register";
 import DashboardPageUsers from "@/pages/users/dashboard/dashboard";
+import NotedPage from "@/pages/users/noted/noted";
 import savingPage from "@/pages/users/saving/saving";
 // import RegisterPage from "@/pages/auth/register";
 import { createBrowserRouter } from "react-router-dom";
@@ -30,7 +31,8 @@ const route = createBrowserRouter([
         Component: layoutUsersPage,
         children: [
             { index: true, Component: DashboardPageUsers },
-            { path: "savings", Component: savingPage }
+            { path: "savings", Component: savingPage },
+            { path: "noted", Component: NotedPage }
         ]
     }
 ])
