@@ -25,7 +25,7 @@ export const ConfigSidebar: TypesConfigSidebar[] = [
     },
     {
         id: 3,
-        link: "/transaction",
+        link: "/dashboard/noted",
         label: "NOTED",
         icon: BookMarkedIcon,
         isActive: false
